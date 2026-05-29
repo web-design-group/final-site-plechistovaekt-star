@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik+Mono+One&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---- Секция page1 (главная) ---- */
+.page1 {
+  background-image: url(file:///C:/Users/Пользователь/Desktop/веб%20яна/картинки/Фон%201.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  background: #45462a;
+  height: 350px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 0 0 200px 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.nav a, .nav2 a, .nav3 a, .nav4 a {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px 65px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.2s;
+  display: inline-block;
+}
+
+.nav a {
+  background: #ebebe2;
+  border: 1px solid #ebebe2;
+  color: #45462a;
+}
+
+.nav2 a, .nav3 a, .nav4 a {
+  background: #45462a;
+  border: 1px solid #45462a;
+  color: #ebebe2;
+}
+
+.nav a:hover, .nav2 a:hover, .nav3 a:hover, .nav4 a:hover {
+  transform: translateY(-3px);
+}
+
+.nav a:active, .nav2 a:active, .nav3 a:active, .nav4 a:active {
+  transform: translateY(0);
+}
+
+.site-header h1 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 55px;
+  color: #ebebe2;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.about {
+  margin: 80px 0 80px 100px;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.about p {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 18px;
+  background: #ebebe2;
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Секция page2 (коты) ---- */
+.page2 {
+  background: #ebebe2;
+  padding-bottom: 40px;
+}
+
+.site-header2 {
+  padding: 30px 0;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: center;
+}
+
+.cats {
+  text-align: center;
+  margin: 100px 0 20px;
+}
+
+.cat-names {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  flex-wrap: wrap;
+}
+
+.cat-name-bg {
+  font-family: "Unbounded", sans-serif;
+  font-size: 40px;
+  background-image: url(file:///C:/Users/Пользователь/Desktop/веб%20яна/картинки/бумага.png);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 40px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.cats p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.picture {
+  position: relative;
+  max-width: 1300px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+.picture img {
+  position: absolute;
+  bottom: 0;
+  object-fit: contain;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.picture img:first-child {
+  left: -5%;
+  width: 380px;
+  z-index: 1;
+}
+
+.picture img:nth-child(2) {
+  left: 46%;
+  transform: translateX(-50%);
+  width: 420px;
+  z-index: 3;
+}
+
+.picture img:last-child {
+  right: -5%;
+  width: 480px;
+  z-index: 2;
+}
+
+.picture img:first-child:hover,
+.picture img:nth-child(2):hover,
+.picture img:last-child:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.picture img:nth-child(2):hover {
+  transform: translateX(-50%) translateY(-15px) scale(1.03);
+}
+
+/* Блок информации о коте */
+.cat-info-panel {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 20px;
+  background: rgba(69, 70, 42, 0.9);
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+  text-align: center;
+  font-family: "Comfortaa", sans-serif;
+  color: #ebebe2;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+.cat-info-panel.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.cat-info-panel span {
+  font-size: 28px;
+  display: block;
+  font-weight: bold;
+}
+
+.cat-info-panel p {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* ---- Секция page3 (о Минхо) ---- */
+.page3 {
+  background: #ebebe2;
+  padding: 40px 0 80px;
+}
+
+.site-header3 {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 20px 40px;
+}
+
+.nav3 {
+  display: flex;
+  justify-content: center;
+}
+
+.page3-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.portrait {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.portrait img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.bio {
+  flex: 1.5;
+  min-width: 300px;
+}
+
+.name-title {
+  font-family: "Unbounded", sans-serif;
+  font-size: 40px;
+  color: #000000;
+  background-image: url(file:///C:/Users/Пользователь/Desktop/веб%20яна/картинки/бумага.png);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
+.bio p {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 240, 0.6);
+  padding: 18px 25px;
+  border-radius: 25px;
+  backdrop-filter: blur(2px);
+}
+
+/* ---- Секция page4 (мерч, карусель + индикаторы) ---- */
+.page4 {
+  background: #45462a;
+  padding: 30px 0 80px;
+  min-height: 100vh;
+}
+
+.container4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav4 a {
+  border: 1px solid #ebebe2;
+}
+
+.merch-title {
+  font-family: "Unbounded", sans-serif;
+  font-size: 48px;
+  color: #ebebe2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-track-container {
+  width: 80%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-card {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 20px;
+  background: rgba(235, 235, 226, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+}
+
+.card-img {
+  background: #ebebe2;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.carousel-card h3 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 24px;
+  color: #ebebe2;
+  margin: 20px 0 10px;
+}
+
+.price {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ebebe2;
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 40px;
+  margin: 10px 0 20px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.order, .reviews {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 18px;
+  background: #ebebe2;
+  color: #45462a;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.order:hover, .reviews:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+}
+
+.carousel-btn {
+  background: #ebebe2;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.carousel-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.carousel-btn:hover:not(.disabled) {
+  background: #ffffff;
+  transform: scale(1.05);
+}
+
+/* индикаторы точек */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background: rgba(235, 235, 226, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.indicator.active {
+  background: #ebebe2;
+  transform: scale(1.3);
+}
+
+/* Toast уведомления */
+.toast-notify {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: #2c2e1f;
+  color: #ebebe2;
+  font-family: "Comfortaa", sans-serif;
+  padding: 12px 28px;
+  border-radius: 60px;
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.2s ease;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+.toast-notify.show {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/* ---- Подвал ---- */
+.site-footer {
+  background: #45462a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #ebebe2;
+  padding: 50px 20px;
+}
+
+.containerf {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.site-footer p {
+  line-height: 1.8;
+  margin: 0;
+}
+
+.site-footer strong {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.site-footer p:last-child {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* ---- Адаптивность ---- */
+@media (max-width: 1100px) {
+  .picture img:first-child { width: 300px; }
+  .picture img:nth-child(2) { width: 340px; }
+  .picture img:last-child { width: 380px; }
+  .picture { height: 550px; }
+}
+
+@media (max-width: 900px) {
+  .nav a, .nav2 a, .nav3 a, .nav4 a { padding: 6px 40px; }
+  .site-header h1 { font-size: 48px; }
+  .about { margin-left: 40px; max-width: 80%; }
+  .page3-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bio { text-align: center; }
+  .name-title { font-size: 32px; }
+  .bio p { font-size: 18px; }
+}
+
+@media (max-width: 768px) {
+  .nav { justify-content: center; gap: 20px; }
+  .site-header h1 { font-size: 36px; }
+  .about { margin: 40px auto; max-width: 90%; text-align: center; }
+  .picture img:first-child { width: 220px; }
+  .picture img:nth-child(2) { width: 260px; }
+  .picture img:last-child { width: 280px; }
+  .picture { height: 450px; }
+  .carousel-track-container { width: 100%; }
+  .carousel-btn { width: 40px; height: 40px; font-size: 22px; }
+  .card-img { width: 220px; height: 220px; }
+  .carousel-card h3 { font-size: 20px; }
+  .price { font-size: 24px; }
+  .order, .reviews { padding: 6px 20px; font-size: 16px; }
+  .containerf { flex-direction: column; text-align: center; gap: 20px; }
+  .toast-notify { white-space: normal; text-align: center; max-width: 80vw; }
+}
+
+@media (max-width: 550px) {
+  .picture img:first-child { width: 160px; bottom: 20px; }
+  .picture img:nth-child(2) { width: 200px; }
+  .picture img:last-child { width: 200px; bottom: 10px; }
+  .picture { height: 350px; }
+  .name-title { font-size: 28px; }
+  .bio p { font-size: 16px; }
+  .merch-title { font-size: 36px; }
+  .cat-names { gap: 60px; }
+  .cat-name-bg { font-size: 28px; padding: 10px 24px; }
+}
