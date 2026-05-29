@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Всё о котах минхо и не только</title>
+  <!-- Favicon (эмодзи-котик) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐱%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+  <!-- Секция 1: главная -->
+  <section class="page1" id="page1">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#page2">о котах</a>
+          <a href="#page3">о минхо</a>
+          <a href="#page4">мерч</a>
+        </nav>
+        <h1>ВСЁ О КОТАХ МИНХО<br>И НЕ ТОЛЬКО</h1>
+      </div>
+    </header>
+    <div class="about container">
+      <p>Добро пожаловать на сайт, где вы сможете познакомиться с пушистой семьей Ли Минхо, айдола из группы Stray kids.</p>
+      <p>Наша миссия — сохранить каждое мгновение, связанное с Суни, Дуни, Дори и их хозяином. Мы знаем, как Ли Ноу реагирует на незнание его питомцев и как сложно найти то самое фото трёхлетней давности. Поэтому совсем скоро на сайте появится обширная галерея, отсортированная по годам и событиям. Также вы сможете заказать официальный мерч с Минхо и каждым из его котов!</p>
+    </div>
+  </section>
+
+  <!-- Секция 2: коты -->
+  <section class="page2" id="page2">
+    <header class="site-header2">
+      <div class="container">
+        <nav class="nav2">
+          <a href="#page1">главная страница</a>
+        </nav>
+      </div>
+    </header>
+    <div class="cats">
+      <div class="cat-names">
+        <span class="cat-name-bg">Суни</span>
+        <span class="cat-name-bg">Дуни</span>
+        <span class="cat-name-bg">Дори</span>
+      </div>
+      <p>нажми на котов :3</p>
+    </div>
+    <div class="picture">
+      <img src="image/суни 1-Photoroom 2.png" alt="суни" data-cat="Суни" loading="lazy">
+      <img src="image/дуни 1-Photoroom 1.png" alt="дуни" data-cat="Дуни" loading="lazy">
+      <img src="image/дори 1-Photoroom 1.png" alt="дори" data-cat="Дори" loading="lazy">
+    </div>
+    <!-- Динамическая карточка информации о коте -->
+    <div class="cat-info-panel" id="catInfoPanel">
+      <span>🐾</span>
+      <p>Кликни на любого кота, чтобы узнать о нём подробнее</p>
+    </div>
+  </section>
+
+  <!-- Секция 3: о Минхо -->
+  <section class="page3" id="page3">
+    <header class="site-header3">
+      <div class="container">
+        <nav class="nav3">
+          <a href="#page1">главная страница</a>
+        </nav>
+      </div>
+    </header>
+    <div class="page3-content">
+      <div class="portrait">
+        <img src="image/Портрет-Photoroom.png" alt="Ли Минхо" loading="lazy">
+      </div>
+      <div class="bio">
+        <h2 class="name-title">Ли Минхо</h2>
+        <p>В группе Stray Kids он числится главным танцором, но по совместительству он профессиональный укротитель котов и обладатель самой загадочной улыбки.</p>
+        <p>Он - это тот самый человек, который хочет казаться равнодушным, но на самом деле переживает за всё на свете.</p>
+        <p>Он тайно заботится о всех участниках: поправляет им микрофоны, проверяет, поели ли они, и гладит их по голове, когда думает, что никто не видит.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция 4: мерч -->
+  <section class="page4" id="page4">
+    <div class="container4">
+      <nav class="nav4">
+        <a href="#page1">главная страница</a>
+      </nav>
+      <h2 class="merch-title">Мерч</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Предыдущий товар">&#10094;</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-card">
+              <div class="card-img"><img src="image/коты-Photoroom.png" alt="SoonDoongDori" loading="lazy"></div>
+              <h3>Мягкая игрушка SoonDoongDori</h3>
+              <p class="price">6 000 ₽</p>
+              <div class="card-buttons">
+                <button class="order" data-product="Мягкая игрушка SoonDoongDori">Заказать</button>
+                <button class="reviews" data-product="Мягкая игрушка SoonDoongDori">Отзывы</button>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <div class="card-img"><img src="image/игрушка-Photoroom.png" alt="SKZOO Libbit" loading="lazy"></div>
+              <h3>Мягкая игрушка SKZOO Libbit</h3>
+              <p class="price">3 500 ₽</p>
+              <div class="card-buttons">
+                <button class="order" data-product="Мягкая игрушка SKZOO Libbit">Заказать</button>
+                <button class="reviews" data-product="Мягкая игрушка SKZOO Libbit">Отзывы</button>
+              </div>
+            </div>
+            <div class="carousel-card">
+              <div class="card-img"><img src="image/капюшон-Photoroom.png" alt="Libbit Winter" loading="lazy"></div>
+              <h3>Мягкая игрушка Libbit Winter</h3>
+              <p class="price">2 000 ₽</p>
+              <div class="card-buttons">
+                <button class="order" data-product="Мягкая игрушка Libbit Winter">Заказать</button>
+                <button class="reviews" data-product="Мягкая игрушка Libbit Winter">Отзывы</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Следующий товар">&#10095;</button>
+      </div>
+      <div class="carousel-indicators" id="carouselIndicators"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="containerf">
+    <p><strong>Контакты:</strong><br>Телефон: +7(922) 671-04-55<br>Почта: msdd@mail.ru</p>
+    <p><strong>Социальные сети:</strong><br>Телеграм: <a href="https://t.me/msdd" target="_blank" style="color:#ebebe2;">https://t.me/msdd</a><br>Вконтакте: <a href="https://vk.com/club210323012" target="_blank" style="color:#ebebe2;">https://vk.com/club210323012</a></p>
+    <p>© Никишенкова Яна, Плечистова Екатерина 2026</p>
+  </div>
+</footer>
+
+<div id="toastMessage" class="toast-notify">✨</div>
+
+<script>
+  (function() {
+    // ---------- КАРУСЕЛЬ С ИНДИКАТОРАМИ ----------
+    const track = document.getElementById('carouselTrack');
+    const cards = document.querySelectorAll('.carousel-card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicatorsContainer = document.getElementById('carouselIndicators');
+    let currentIndex = 0;
+    const total = cards.length;
+    let resizeTimeout;
+
+    function createIndicators() {
+      indicatorsContainer.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('indicator');
+        if (i === currentIndex) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+          currentIndex = i;
+          updateCarousel();
+          updateButtonsAndIndicators();
+        });
+        indicatorsContainer.appendChild(dot);
+      }
+    }
+
+    function updateButtonsAndIndicators() {
+      if (prevBtn && nextBtn) {
+        if (currentIndex === 0) prevBtn.classList.add('disabled');
+        else prevBtn.classList.remove('disabled');
+        if (currentIndex === total - 1) nextBtn.classList.add('disabled');
+        else nextBtn.classList.remove('disabled');
+      }
+      document.querySelectorAll('.indicator').forEach((dot, idx) => {
+        if (idx === currentIndex) dot.classList.add('active');
+        else dot.classList.remove('active');
+      });
+    }
+
+    function updateCarousel() {
+      if (!cards.length) return;
+      const cardWidth = cards[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      updateButtonsAndIndicators();
+    }
+
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        updateCarousel();
+      }, 100);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < total - 1) {
+        currentIndex++;
+        updateCarousel();
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+      }
+    });
+
+    function initCarousel() {
+      createIndicators();
+      updateCarousel();
+      setTimeout(updateCarousel, 200);
+    }
+    window.addEventListener('load', initCarousel);
+
+    // ---------- КЛИК ПО КОТАМ (панель информации) ----------
+    const catImages = document.querySelectorAll('.picture img');
+    const catInfoPanel = document.getElementById('catInfoPanel');
+    const catsData = {
+      'Суни': {  desc: 'Суни – старший и самый степенный кот. Обожает дремать на солнышке и наблюдать за Минхо из укрытия.' },
+      'Дуни': {  desc: 'Дуни – маленький ураган. Любит шалить, гонять шарики и получать вкусняшки.' },
+      'Дори': {  desc: 'Дори – нежный лакомка. Обожает спать на руках у Минхо и мурлыкать как трактор.' }
+    };
+    catImages.forEach(img => {
+      img.addEventListener('click', (e) => {
+        const catName = img.getAttribute('data-cat');
+        const info = catsData[catName] || { emoji: '🐱', desc: 'Самый милый кот Минхо!' };
+        catInfoPanel.innerHTML = `<span>${info.emoji} ${catName} ${info.emoji}</span><p>${info.desc}</p>`;
+        catInfoPanel.classList.add('show');
+      });
+    });
+
+    // ---------- TOAST УВЕДОМЛЕНИЯ ----------
+    const toast = document.getElementById('toastMessage');
+    function showToast(message, duration = 2000) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, duration);
+    }
+
+    const orderBtns = document.querySelectorAll('.order');
+    const reviewsBtns = document.querySelectorAll('.reviews');
+
+    orderBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const product = btn.getAttribute('data-product');
+        showToast(`📦 Спасибо! "${product}" — свяжитесь с нами для оформления заказа.`, 2500);
+      });
+    });
+
+    reviewsBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const product = btn.getAttribute('data-product');
+        showToast(`💬 Отзывы о "${product}" появятся совсем скоро! Следите за обновлениями.`, 2500);
+      });
+    });
+
+    // ---------- СВАЙП ДЛЯ КАРУСЕЛИ (мобильные) ----------
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const trackContainer = document.querySelector('.carousel-track-container');
+    if (trackContainer) {
+      trackContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+      trackContainer.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0 && currentIndex < total - 1) {
+            currentIndex++;
+            updateCarousel();
+          } else if (diff < 0 && currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        }
+      });
+    }
+
+    // ---------- ПЛАВНОЕ ПОЯВЛЕНИЕ СЕКЦИЙ ----------
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(20px)';
+      section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(section);
+    });
+  })();
+</script>
+</body>
+</html>
